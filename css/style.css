@@ -211,7 +211,16 @@ a:hover, a:active, a:focus {
   margin: 0;
 }
 
-.navbar-default .navbar-nav li a {
+.navbar-default .nav-link {
+		color: #777;
+		font-size: 16px;
+		-webkit-transition: all 0.4s ease-in-out;
+		transition: all 0.4s ease-in-out;
+    padding-right: 10px;
+    padding-left: 10px;
+}
+
+.navbar-default .secs {
     color: #777;
     font-size: 16px;
     letter-spacing: 1px;
@@ -286,7 +295,7 @@ a:hover, a:active, a:focus {
 }
 
 .main-about {
-  background: url('../images/about-bg.jpg') no-repeat;
+  background: url('../images/projects-bg.jpg') no-repeat;
 }
 
 .main-contact {
@@ -653,7 +662,7 @@ footer .footer-copyright {
 
 
 /* Back top */
-.go-top {
+.go-top1 {
   background-color: #ffffff;
   box-shadow: 1px 1.732px 12px 0px rgba( 0, 0, 0, .14 ), 1px 1.732px 3px 0px rgba( 0, 0, 0, .12 );
   transition : all 1s ease;
@@ -671,11 +680,79 @@ footer .footer-copyright {
   border-radius: 100%;
 }
 
-.go-top:hover {
+.go-top1:hover {
     background: #bfba55;
     color: #ffffff;
 }
 
+.go-top2 {
+  background-color: #ffffff;
+  box-shadow: 1px 1.732px 12px 0px rgba( 0, 0, 0, .14 ), 1px 1.732px 3px 0px rgba( 0, 0, 0, .12 );
+  transition : all 1s ease;
+  bottom: 4em;
+  right: 2em;
+  color: #333;
+  font-size: 24px;
+  display: none;
+  position: fixed;
+  text-decoration: none;
+  width: 20px;
+  height: 20px;
+  line-height: 38px;
+  text-align: center;
+  border-radius: 100%;
+}
+
+.go-top2:hover {
+    background: #bfba55;
+    color: #ffffff;
+}
+
+.go-top3 {
+  background-color: #ffffff;
+  box-shadow: 1px 1.732px 12px 0px rgba( 0, 0, 0, .14 ), 1px 1.732px 3px 0px rgba( 0, 0, 0, .12 );
+  transition : all 1s ease;
+  bottom: 6em;
+  right: 2em;
+  color: #333;
+  font-size: 24px;
+  display: none;
+  position: fixed;
+  text-decoration: none;
+  width: 20px;
+  height: 20px;
+  line-height: 38px;
+  text-align: center;
+  border-radius: 100%;
+}
+
+.go-top3:hover {
+    background: #bfba55;
+    color: #ffffff;
+}
+
+.go-top4 {
+  background-color: #ffffff;
+  box-shadow: 1px 1.732px 12px 0px rgba( 0, 0, 0, .14 ), 1px 1.732px 3px 0px rgba( 0, 0, 0, .12 );
+  transition : all 1s ease;
+  bottom: 8em;
+  right: 2em;
+  color: #333;
+  font-size: 24px;
+  display: none;
+  position: fixed;
+  text-decoration: none;
+  width: 20px;
+  height: 20px;
+  line-height: 38px;
+  text-align: center;
+  border-radius: 100%;
+}
+
+.go-top4:hover {
+    background: #bfba55;
+    color: #ffffff;
+}
 
 
 /*---------------------------------------
