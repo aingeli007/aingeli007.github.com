@@ -31,8 +31,7 @@
 
 <!-- Navigation section  -->
 
-<div class="navbar navbar-default navbar-static-top" role="navigation">
-     <div class="container">
+<div class="navbar navbar-default navbar-fixed-top shadow" role="navigation" style="box-shadow: 0 0.5rem 1rem rgba(0, 0, 0, 0.175)">
 
           <div class="navbar-header">
                <button class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
@@ -40,33 +39,33 @@
                     <span class="icon icon-bar"></span>
                     <span class="icon icon-bar"></span>
                </button>
-               <a href="index.html" class="navbar-brand">Aingeli Anton</a>
+               <a href="index.html" class="navbar-brand" style="padding-left: 30px;">Aingeli Anton</a>
           </div>
           <div class="collapse navbar-collapse">
                <ul class="nav navbar-nav navbar-right">
                     <li><a href="#projects" class="secs">Projects</a></li>
                     <li><a href="#contact" class="secs">Contact</a></li>
-                    <div class="nav navbar-nav">
-                      <li>
-                        <a class="nav-link" href="https://www.linkedin.com/in/aingeli-anton/" target="_blank" class="right">
-  								              <i class="fa fa-brands fa-linkedin" aria-hidden="true"></i>
-  							        </a>
-                      </li>
-                      <li>
-                        <a class="nav-link" href="Aingeli_Anton.pdf" target="_blank" class="right">
-                                <i class="fa fa-solid fa-file" aria-hidden="true"></i>
-                        </a>
-                      </li>
-                      <li>
-                        <a class="nav-link" href="mailto:contactme@aingeli.com" target="_blank" class="right">
-                                <i class="fa fa-solid fa-envelope" aria-hidden="true"></i>
-                        </a>
-                      </li>
-                    </div>
+                    <li>
+                      <a class="nav-link" href="https://www.linkedin.com/in/aingeli-anton/" target="_blank">
+  								            <i class="fa fa-brands fa-linkedin" aria-hidden="true"></i>
+                              <i1>LinkedIn</i1>
+  							      </a>
+                    </li>
+                    <li>
+                      <a class="nav-link" href="Aingeli_Anton.pdf" target="_blank">
+                              <i class="fa fa-solid fa-file" aria-hidden="true"></i>
+                              <i1>Resume</i1>
+                      </a>
+                    </li>
+                    <li>
+                      <a class="nav-link" href="mailto:contactme@aingeli.com" target="_blank" style="padding-right: 40px;">
+                              <i class="fa fa-solid fa-envelope" aria-hidden="true"></i>
+                              <i1>Email</i1>
+                      </a>
+                    </li>
                </ul>
           </div>
 
-  </div>
 </div>
 
 <!-- Home Section -->
@@ -180,7 +179,7 @@
                     <h2>Say hello!</h2>
                     <p>Shoot me a message!</p>
 
-                    <form action="#" method="post">
+                    <form action="contact_send.php" method="post" onsubmit="return Press(this)">
                          <div class="col-md-4 col-sm-4">
                               <input name="name" type="text" class="form-control" id="name" placeholder="Name">
                          </div>
@@ -221,10 +220,7 @@
 </footer>
 
 <!-- Back top -->
-<a href="#back-top" class="go-top1"><i class="fa fa-angle-up"></i></a>
-<!--<a href="#back-top" class="go-top2"><i class="fa fa-brands fa-linkedin" style="font-size: 0.5em;"></i></a>
-<a href="#back-top" class="go-top3"><i class="fa fa-solid fa-file"></i></a>
-<a href="#back-top" class="go-top4"><i class="fa fa-solid fa-envelope"></i></a>-->
+<a href="#back-top" class="go-top"><i class="fa fa-angle-up"></i></a>
 
 <!-- SCRIPTS -->
 
