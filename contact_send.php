@@ -30,7 +30,7 @@ $mail->Username = $email_address;
 $mail->Password = $password;
 
 //If SMTP requires TLS encryption then set it
-$mail->SMTPSecure = "tls";
+$mail->SMTPSecure = "ssl";
 //Set TCP port to connect to
 $mail->Port = 587;
 
