@@ -9,21 +9,23 @@
 <meta name="author" content="">
 <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
 
+<link rel="shortcut icon" type="image/x-icon" href="logo.svg">
 <title>Aingeli Anton</title>
 
 <link rel="stylesheet" href="css/bootstrap.min.css">
 <link rel="stylesheet" href="css/font-awesome.min.css">
+<link rel="stylesheet" href="css/aos.css">
 
 <!-- Main css -->
 <link rel="stylesheet" href="css/style.css">
-<link href="https://fonts.googleapis.com/css?family=Lora|Merriweather:300,400" rel="stylesheet">
+<link href='http://fonts.googleapis.com/css?family=Lato:400,700' rel='stylesheet' type='text/css'>
 
 </head>
 <body>
 
 <!-- Navigation section  -->
 
-<div class="navbar navbar-default navbar-fixed-top shadow" role="navigation" style="box-shadow: 0 0.5rem 1rem rgba(0, 0, 0, 0.175)">
+<div class="navbar navbar-default navbar-fixed-top shadow" role="navigation">
 
           <div class="navbar-header">
                <button class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
@@ -31,7 +33,9 @@
                     <span class="icon icon-bar"></span>
                     <span class="icon icon-bar"></span>
                </button>
-               <a href="index.html" class="navbar-brand" style="padding-left: 30px;">Aingeli Anton</a>
+               <a href="index.html" class="navbar-brand">
+                 <img src="logo.svg" alt="Aingeli Anton" class=logo>
+               </a>
           </div>
           <div class="collapse navbar-collapse">
                <ul class="nav navbar-nav navbar-right">
@@ -50,7 +54,7 @@
                       </a>
                     </li>
                     <li>
-                      <a class="nav-link" href="mailto:contactme@aingeli.com" target="_blank" style="padding-right: 40px;">
+                      <a class="nav-link" href="mailto:contactme@aingeli.com" target="_blank">
                               <i class="fa fa-solid fa-envelope" aria-hidden="true"></i>
                               <i1>Email</i1>
                       </a>
@@ -85,15 +89,17 @@
           <div class="row">
 
                <div class="col-md-offset-1 col-md-10 col-sm-12">
-                    <div class="blog-post-thumb">
-                         <div class="blog-post-image">
-                              <img src="images/about.jpg" class="img-responsive" alt="Blog Image">
+                    <div class="about-thumb">
+                         <div class="about-image">
+                              <img src="images/about.jpg" class="img-responsive" alt="About Image" data-aos="fade-up">
                          </div>
-                         <div class="blog-post-title">
-                              <h3><a href="single-post.html">Who am I?</a></h3>
-                         </div>
-                         <div class="blog-post-des">
-                           <p>Hello! I’m a compassionate, curious, and inquisitive lifelong learner. As a creative, big-picture thinker, I’m driven by the craft of detail. I’m ambitious, delivery-focused, diplomatic and adaptable to whatever task I’m presented with. I have a deep sense of empathy which fuels my passion to create honest, inclusive, meaningful experiences for people. My degree has allowed me to explore computer science, philosophy, artificial intelligence, cognitive disorders, neuroscience, statistics, linguistics, and psychology. My understanding of the mind has unlocked a passion for exploring human-centered research and design.</p>
+                         <div data-aos="fade-up">
+                           <div class="about-title">
+                                <h3>Who am I?</h3>
+                           </div>
+                           <div class="about-des">
+                             <p>Hello! I’m a compassionate, curious, and inquisitive lifelong learner. As a creative, big-picture thinker, I’m driven by the craft of detail. I’m ambitious, delivery-focused, diplomatic and adaptable to whatever task I’m presented with. I have a deep sense of empathy which fuels my passion to create honest, inclusive, meaningful experiences for people. My degree has allowed me to explore computer science, philosophy, artificial intelligence, cognitive disorders, neuroscience, statistics, linguistics, and psychology. My understanding of the mind has unlocked a passion for exploring human-centered research and design.</p>
+                           </div>
                          </div>
                     </div>
                </div>
@@ -103,7 +109,7 @@
 
 <!-- Home Section -->
 
-<section id="home" class="main-about parallax-section">
+<section id="home" class="main-projects parallax-section">
      <div class="overlay"></div>
      <div class="container">
           <div class="row">
@@ -122,24 +128,38 @@
      <div class="container">
           <div class="row">
 
-               <div class="col-md-offset-1 col-md-10 col-sm-12">
+               <div class="col-md-12 col-sm-12" data-aos="fade-in">
+                 <div class="row">
                     <div class="col-md-4 col-sm-4">
-                         <h2>Project 1</h2>
-                         <p>Integer eget tortor justo. Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia.</p>
-                         <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit <strong>Ut enim ad minim veniam, quis nostrud</strong> exercitation ullamco.</p>
+                      <a class="card recycloop" href="case-study.html">
+                        <img class="card-img-top" src="images/case-study.png" alt="Case Study">
+                        <div class="card-body">
+                          <h2>Case Study</h2>
+                          <p>UI/UX design process of Recycloop: An app that rewards recyclers.</p>
+                        </div>
+                      </a>
                     </div>
 
                     <div class="col-md-4 col-sm-4">
-                         <h2>Project 2</h2>
-                         <p>Quisque vitae felis eros. Suspendisse quis leo molestie, iaculis sapien id, hendrerit augue. Phasellus fermentum.</p>
-                         <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit Ut enim ad minim veniam, quis nostrud exercitation.</p>
+                      <div class="card pop">
+                        <img class="card-img-top" src="images/hueristic-eval.png" alt="Heuristic Evaluation">
+                        <div class="card-body">
+                          <h2>Heuristic Evaluation</h2>
+                          <p>Heuristic Evaluation of the UI/UX design for Poparide: An existing app for ridesharing.</p>
+                        </div>
+                      </div>
                     </div>
 
                     <div class="col-md-4 col-sm-4">
-                         <h2>Project 3</h2>
-                         <p>Vivamus non scelerisque ex, et interdum leo. In bibendum lacus vitae felis egestas, at consectetur metus facilisis.</p>
-                         <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit Ut enim ad minim veniam, quis nostrud exercitation.</p>
+                      <div class="card habu">
+                        <img class="card-img-top" src="images/app-design.png" alt="App Design">
+                        <div class="card-body">
+                          <h2>App Design</h2>
+                          <p>UI/UX design of Habu: An app that provides data on natural medicine.</p>
+                        </div>
+                      </div>
                     </div>
+                  </div>
                </div>
 
           </div>
@@ -164,7 +184,7 @@
 <!-- Contact Section -->
 
 <section id="contact">
-     <div class="container">
+     <div class="container" data-aos="fade-up">
           <div class="row">
 
                <div class="col-md-offset-1 col-md-10 col-sm-12">
@@ -203,7 +223,7 @@
                <div align="center">
                     <h3>Aingeli Anton</h3>
                     <div class="footer-copyright">
-                         <p>Copyright &copy; 2022 Aingeli Anton - Design: With Love</p>
+                         <p>Copyright &copy; 2022 Aingeli Anton - Design: With Love &#10084;</p>
                     </div>
                </div>
 
@@ -223,6 +243,7 @@
 <script src="js/jquery.parallax.js"></script>
 <script src="js/smoothscroll.js"></script>
 <script src="js/custom.js"></script>
+<script src="js/aos.js"></script>
 
 </body>
 </html>

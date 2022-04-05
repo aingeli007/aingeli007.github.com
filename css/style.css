@@ -11,7 +11,7 @@ body {
     Typorgraphy
 -----------------------------------------*/
 
-h1,h2,h3,h4,h5,h6 {
+h1,h2,h3,h4,h5 {
   font-family: 'Lato', serif;
   font-style: normal;
   font-weight: bold;
@@ -43,6 +43,10 @@ h4 {
   letter-spacing: 2px;
 }
 
+h5 {
+  font-size: 18px;
+}
+
 p {
     color: #777;
     font-size: 15px;
@@ -50,12 +54,6 @@ p {
     line-height: 26px;
     letter-spacing: 0.2px;
 }
-
-.btn-success:focus {
-  background-color: #000;
-  border-color: transparent;
-}
-
 
 /*---------------------------------------
     General
@@ -68,9 +66,6 @@ html{
 
 a {
   color: #4d638c;
-  -webkit-transition: 0.5s;
-  -o-transition: 0.5s;
-  transition: 0.5s;
   text-decoration: none !important;
 }
 a:hover, a:active, a:focus {
@@ -96,11 +91,6 @@ a:hover, a:active, a:focus {
 #contact {
   padding-top: 60px;
   padding-bottom: 80px;
-}
-
-.main-about,
-.main-contact {
-  height: 65vh;
 }
 
 .overlay {
@@ -129,19 +119,28 @@ a:hover, a:active, a:focus {
     background: #ffffff;
     margin: 0 !important;
     padding: 10px 0;
+		box-shadow: 0 0.5rem 1rem rgba(0, 0, 0, 0.175);
 }
 
 .navbar-default .navbar-brand {
   margin-left: -10px;
 	margin-top: -5px;
+	padding-left: 30px;
+}
+
+.navbar-default .navbar-brand .logo {
+	width: 30px;
+}
+
+
+.navbar-default .navbar-brand .logo:hover {
+	opacity: 60%;
 }
 
 .navbar-default .nav-link {
 		color: #777;
 		font-size: 16px;
 		letter-spacing: 1px;
-		-webkit-transition: all 0.4s ease-in-out;
-		transition: all 0.4s ease-in-out;
     padding-right: 10px;
     padding-left: 10px;
 }
@@ -150,8 +149,6 @@ a:hover, a:active, a:focus {
     color: #777;
     font-size: 16px;
     letter-spacing: 1px;
-    -webkit-transition: all 0.4s ease-in-out;
-    transition: all 0.4s ease-in-out;
     padding-right: 22px;
     padding-left: 10px;
 }
@@ -202,7 +199,38 @@ a:hover, a:active, a:focus {
   background-color: transparent;
 }
 
+.pop {
+	margin: auto;
+}
 
+.recycloop {
+	float: right;
+}
+
+.recycloop:hover {
+	  background-color: #EEE;
+}
+
+.personality {
+    display: inline-block;
+    min-width: 10px;
+    padding: 10px 25px;
+    font-size: 20px;
+    font-weight: 700;
+    line-height: 1;
+    color: #fff;
+    text-align: center;
+    white-space: nowrap;
+    vertical-align: middle;
+    background-color: #005F45;
+    border-radius: 5px;
+		margin-left: 5px;
+		margin-right: 5px;
+}
+
+.fa-envelope {
+	padding-right: 40px;
+}
 
 /*---------------------------------------
     Home section
@@ -214,7 +242,7 @@ a:hover, a:active, a:focus {
     color: #ffffff;
     display: -webkit-box;
     display: -webkit-flex;
-     display: -ms-flexbox;
+    display: -ms-flexbox;
     display: flex;
     -webkit-box-align: center;
     -webkit-align-items: center;
@@ -229,14 +257,6 @@ a:hover, a:active, a:focus {
   height: 100vh;
 }
 
-.main-about {
-  background: url('../images/projects-bg.jpg') no-repeat;
-}
-
-.main-contact {
-  background: url('../images/contact-bg.jpg') no-repeat;
-}
-
 #particles-js {
   position: absolute;
   width: 100%;
@@ -249,7 +269,11 @@ a:hover, a:active, a:focus {
   color: #bfba55;
 }
 
-#home .btn {
+#home p {
+	color: #5f9c5a;
+}
+
+.btn {
   background: #ffffff;
   border: 2px solid #ffffff;
   border-radius: 100px;
@@ -261,13 +285,42 @@ a:hover, a:active, a:focus {
   text-transform: uppercase;
   padding: 13px 22px;
   margin-top: 42px;
-  transition: all 0.4s ease-in-out;
 }
 
-#home .btn:hover {
+.btn:hover {
   background: transparent;
   border-color: #ffffff;
   color: #ffffff;
+}
+
+.btn {
+  background: #ffffff;
+  border: 2px solid #ffffff;
+  border-radius: 100px;
+  color: #444;
+  font-family: 'Lato', serif;
+  font-size: 10px;
+  font-weight: bold;
+  letter-spacing: 2px;
+  text-transform: uppercase;
+  padding: 13px 22px;
+  margin-top: 42px;
+}
+
+.btn-proto:hover {
+  background-color: #EEE;
+	color: #000;
+	border-color: #000;
+}
+
+.btn-proto {
+	margin-top: 0px;
+	border-color: #000;
+	margin-bottom: 40px;
+}
+
+.btn-center {
+	text-align: center;
 }
 
 /*---------------------------------------
@@ -301,11 +354,17 @@ a:hover, a:active, a:focus {
 
 #about .about-title {
 	color: #000;
+	margin-top: 50px;
 }
 
 /*---------------------------------------
    Projects section
 -----------------------------------------*/
+
+.main-projects {
+  background: url('../images/projects-bg.jpg') no-repeat;
+	height: 65vh;
+}
 
 #projects span {
   display: block;
@@ -317,16 +376,16 @@ a:hover, a:active, a:focus {
   padding-right: 0px;
 }
 
-#projects .col-md-12 p {
-  padding-top: 22px;
-  text-align: center;
-}
-
 
 
 /*---------------------------------------
    Contact section
 -----------------------------------------*/
+
+.main-contact {
+  background: url('../images/contact-bg.jpg') no-repeat;
+	height: 65vh;
+}
 
 #contact .col-md-4 {
   padding-left: 0px;
@@ -345,7 +404,6 @@ a:hover, a:active, a:focus {
   box-shadow: none;
   margin-top: 10px;
   margin-bottom: 10px;
-  transition: all 0.4s ease-in-out;
 }
 
 #contact .form-control:hover {
@@ -361,12 +419,358 @@ a:hover, a:active, a:focus {
   border-radius: 100px;
   border: none;
   color: #ffffff;
-  font-weight: bold;
-  transition: all 0.4s ease-in-out;
+  font-weight: bold
 }
 
 #contact input[type="submit"]:hover {
   background: #333;
+}
+
+#case-study-grey {
+	background-color: #EEE;
+}
+
+/*---------------------------------------
+   Case Study
+-----------------------------------------*/
+
+.case-study-sections {
+	margin-top: 40px;
+	margin-bottom: 40px;
+}
+
+/*---------------------------------------
+   Case Study Title
+-----------------------------------------*/
+
+.case-study-title {
+  background: url('../images/case-study-title-bg.jpg') no-repeat;
+	height: 100vh;
+}
+
+.case-study-title-text {
+	color: #005F45;
+}
+
+.case-study-recycloop {
+	margin-top: 90px;
+	padding-left: 40px;
+}
+
+.case-study-recycloop img {
+	width: 350px;
+	margin-top: 5px;
+}
+
+.mock img {
+	width: 670px;
+	margin-top: 40px;
+}
+
+/*---------------------------------------
+   Research
+-----------------------------------------*/
+
+.beginning {
+	margin-bottom: 40px;
+}
+
+.nine-percent {
+	margin-top: 30px;
+}
+
+.pie-chart {
+	text-align: center;
+}
+
+.pie-chart img {
+	margin-top: 30px;
+	width: 300px;
+}
+
+.stats {
+	margin-top: 100px;
+}
+
+.stats img {
+	width: 100px;
+}
+
+.quote {
+	text-align: center;
+	margin-top: 60px;
+}
+
+.quoted {
+	text-align: right;
+}
+
+.goals {
+	margin-top: 60px;
+	margin-bottom: 60px;
+}
+
+.goals h5 {
+	color: #358300;
+}
+
+.goals-left {
+	text-align: right;
+}
+
+.goals-right {
+	text-align: left;
+}
+
+.goals-img {
+	text-align: center;
+}
+
+.goals-img img {
+	width: 400px;
+}
+
+.how-might-we {
+	background: url('../images/how-might-we-bg.jpg') no-repeat;
+	height: 30vw;
+}
+
+/*---------------------------------------
+   Persona
+-----------------------------------------*/
+
+.themes {
+	background-color: #C1E5BE;
+	border: solid 10px #FFF;
+	min-height: 130px;
+	border-radius: 20px;
+	color: #000;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+
+.hyp {
+	margin-top: 30px;
+	margin-bottom: 30px;
+	color: #777;
+}
+
+.quotes img {
+	margin-top: 10px;
+	width: 30px;
+	margin-bottom: -10px;
+}
+
+.lily-pic {
+	margin-top: 40px;
+	width: 350px;
+}
+
+.trait {
+	font-size: 18px;
+	color: #777;
+	font-weight: bold;
+}
+
+.trait-img {
+	margin-bottom: 10px;
+}
+
+.trait-img img {
+	width: 40px;
+}
+
+.lily-quote {
+	margin-top: 40px;
+}
+
+.personalities {
+	margin-top: 30px;
+}
+
+.scenario {
+	color: #777;
+}
+
+.task-selection {
+	margin-bottom: -10px;
+}
+
+.core-epic {
+	margin-top: 20px;
+	color: #5f9c5a;
+}
+
+.tasks {
+	background-color: #C1E5BE;
+	border: solid 10px #EEE;
+	min-height: 180px;
+	padding-top: 10px;
+	border-radius: 20px;
+}
+
+.tasks p {
+		color: #000;
+}
+
+.tasks-main {
+	background-color: #005F45;
+}
+
+.tasks-main p {
+	color: #fff;
+}
+
+.task-flow {
+	margin-top: 40px;
+}
+
+.task-flow img {
+	width: 320px;
+}
+
+.task-flow-diagram {
+	margin-top: 30px;
+}
+
+.task-flow-diagram img {
+	width: 800px;
+}
+
+.exp-map-align {
+	text-align: center;
+}
+
+.exp-map {
+	width: 1000px;
+	margin-bottom: 40px;
+}
+
+/*---------------------------------------
+   Prototyping
+-----------------------------------------*/
+
+.low-fi {
+	background: url('../images/sketches.jpg') no-repeat;
+	height: 30vw;
+}
+
+.low-fi-align {
+	text-align: center;
+}
+
+.low-fi-pic {
+	margin-top: 30px;
+	width: 1150px;
+}
+
+/*---------------------------------------
+   Branding
+-----------------------------------------*/
+
+.branding {
+	background: url('../images/moodboard.jpg') no-repeat;
+	height: 30vw;
+}
+
+.palette {
+	text-align: center;
+}
+
+.colours {
+	width: 1000px;
+	margin-top: 40px;
+	margin-bottom: 40px;
+}
+
+.green {
+	color: #5f9c5a;
+}
+
+.wordmark-align {
+	text-align: center;
+}
+
+.wordmark {
+	width: 1100px;
+	margin-top: 40px;
+}
+
+.colour {
+	text-align: center;
+}
+
+.colour-app {
+	width: 1000px;
+	margin-top: 40px;
+	margin-bottom: 40px;
+}
+
+.hi-fi {
+	background: url('../images/hi-fi.jpg') no-repeat;
+	height: 30vw;
+}
+
+.scroll {
+	width: 200px;
+}
+
+.alt-center {
+	text-align: center;
+}
+
+.alternative {
+	width: 600px;
+	margin-bottom: 40px;
+}
+
+.marketing {
+	width: 500px;
+}
+
+.point {
+	margin-bottom: 40px;
+}
+
+.tarot {
+	text-align: center;
+}
+
+.tarot-pic {
+	width: 300px;
+	margin-bottom: 40px;
+}
+
+.learnings {
+	margin-bottom: 40px;
+}
+
+.num {
+	width: 50px;
+	margin-bottom: 20px;
+}
+
+.future {
+	margin-bottom: 40px;
+}
+
+.future-pic {
+	width: 500px;
+}
+
+.next {
+	text-align: center;
+}
+
+.final-quote {
+	text-align: center;
+	margin-top: 60px;
+}
+
+.final-quoted {
+	text-align: center;
+	margin-bottom: 40px;
 }
 
 /*---------------------------------------
@@ -394,10 +798,19 @@ a:hover, a:active, a:focus {
     flex: 1 1 auto;
     min-height: 2px;
     padding: 14px;
+		display: block;
 }
 
 .card-body h2 {
 	color: #000;
+	margin-top: 10px;
+	margin-bottom: -15px;
+	text-align: center;
+}
+
+.card-body p {
+  padding-top: 22px;
+	margin-left: 20px;
 }
 
 .card-img-top {
@@ -410,6 +823,7 @@ a:hover, a:active, a:focus {
 		margin-left: auto;
 		margin-right: auto;
 		margin-top: 4px;
+		width: 210px;
 }
 
 
@@ -424,17 +838,6 @@ footer {
     position: relative;
 }
 
-footer .col-md-4 .fa {
-  color: #ffffff;
-  padding-right: 8px;
-}
-
-footer hr {
-  border-color: #121212;
-  margin-top: 62px;
-  margin-bottom: 42px;
-}
-
 footer .footer-copyright {
   padding-top: 12px;
 }
@@ -443,7 +846,6 @@ footer .footer-copyright {
 .go-top {
   background-color: #ffffff;
   box-shadow: 1px 1.732px 12px 0px rgba( 0, 0, 0, .14 ), 1px 1.732px 3px 0px rgba( 0, 0, 0, .12 );
-  transition : all 1s ease;
   bottom: 2em;
   right: 2em;
   color: #333;
@@ -467,9 +869,39 @@ footer .footer-copyright {
    Mobile Responsive
 -----------------------------------------*/
 
+@media (min-width: 1700px) {
+
+.main-home h1 {
+	font-size: 5vw;
+}
+
+.main-home h4 {
+  font-size: 0.7vw;
+}
+
+.main-projects h1 {
+	font-size: 5vw;
+}
+
+.main-contact h1 {
+		font-size: 5vw;
+}
+
+.container {
+		width: 70vw;
+}
+
+.btn {
+  border: 0.2vw;
+  font-size: 0.6vw;
+  padding: 0.9vw 2vw;
+}
+
+}
+
 @media (max-width: 980px) {
 
-  .main-about,
+  .main-projects,
   .main-contact {
     height: 35vh;
   }
@@ -510,6 +942,20 @@ footer .footer-copyright {
 
 	.nav-link i1 {
 		display: block;
+	}
+
+	.pop {
+		margin-top: 50px;
+		margin-bottom: 50px;
+	}
+
+	.recycloop {
+		float: none;
+		margin: auto;
+	}
+
+	.habu {
+		margin: auto;
 	}
 
 }
