@@ -1,23 +1,16 @@
-/* lato-regular - latin */
-@font-face {
-  font-family: 'Lato';
-  font-style: normal;
-  font-weight: 300;
-  src: url('../fonts/lato-v22-latin-regular.eot'); /* IE9 Compat Modes */
-  src: local(''),
-       url('../fonts/lato-v22-latin-regular.eot?#iefix') format('embedded-opentype'), /* IE6-IE8 */
-       url('../fonts/lato-v22-latin-regular.woff2') format('woff2'), /* Super Modern Browsers */
-       url('../fonts/lato-v22-latin-regular.woff') format('woff'), /* Modern Browsers */
-       url('../fonts/lato-v22-latin-regular.ttf') format('truetype'), /* Safari, Android, iOS */
-       url('../fonts/lato-v22-latin-regular.svg#Lato') format('svg'); /* Legacy iOS */
-}
-
 body {
 		background: #ffffff;
     font-family: 'Lato', serif;
     font-style: normal;
 		font-weight: 300;
     overflow-x: hidden;
+		src: url('../fonts/lato-v22-latin-regular.eot'); /* IE9 Compat Modes */
+		src: local(''),
+				 url('../fonts/lato-v22-latin-regular.eot?#iefix') format('embedded-opentype'), /* IE6-IE8 */
+				 url('../fonts/lato-v22-latin-regular.woff2') format('woff2'), /* Super Modern Browsers */
+				 url('../fonts/lato-v22-latin-regular.woff') format('woff'), /* Modern Browsers */
+				 url('../fonts/lato-v22-latin-regular.ttf') format('truetype'), /* Safari, Android, iOS */
+				 url('../fonts/lato-v22-latin-regular.svg#Lato') format('svg'); /* Legacy iOS */
 }
 
 
@@ -124,7 +117,6 @@ a:hover, a:active, a:focus {
   overflow: hidden;
 }
 
-
 /*---------------------------------------
     Main Navigation
 -----------------------------------------*/
@@ -138,12 +130,12 @@ a:hover, a:active, a:focus {
 
 .navbar-default .navbar-brand {
   margin-left: -10px;
-	margin-top: -5px;
+	margin-top: -10px;
 	padding-left: 30px;
 }
 
 .navbar-default .navbar-brand .logo {
-	width: 30px;
+	width: 40px;
 }
 
 
@@ -305,20 +297,6 @@ a:hover, a:active, a:focus {
   background: transparent;
   border-color: #ffffff;
   color: #ffffff;
-}
-
-.btn {
-  background: #ffffff;
-  border: 2px solid #ffffff;
-  border-radius: 100px;
-  color: #444;
-  font-family: 'Lato', serif;
-  font-size: 10px;
-  font-weight: bold;
-  letter-spacing: 2px;
-  text-transform: uppercase;
-  padding: 13px 22px;
-  margin-top: 42px;
 }
 
 .btn-proto:hover {
@@ -906,7 +884,7 @@ footer .footer-copyright {
 }
 
 .btn {
-  border: 0.2vw;
+  border: solid 0.2vw #FFF;
   font-size: 0.6vw;
   padding: 0.9vw 2vw;
 }
