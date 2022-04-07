@@ -86,8 +86,11 @@ a:hover, a:active, a:focus {
   box-sizing: border-box;
 }
 
+#projects {
+	padding-top: 100px;
+	padding-bottom: 80px;
+}
 #about,
-#projects,
 #contact {
   padding-top: 60px;
   padding-bottom: 80px;
@@ -590,7 +593,7 @@ a:hover, a:active, a:focus {
 .tasks {
 	background-color: #C1E5BE;
 	border: solid 10px #EEE;
-	min-height: 180px;
+	min-height: 200px;
 	padding-top: 10px;
 	border-radius: 20px;
 }
